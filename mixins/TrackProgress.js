@@ -1,5 +1,4 @@
 var TrackProgressMixin = {
-
     trackProgress: function ( constant ) {
         this.addActionHandler(constant, {
             getInitialState: function () {

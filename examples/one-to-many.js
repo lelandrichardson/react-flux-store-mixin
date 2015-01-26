@@ -67,7 +67,8 @@ var CustomerListStore = Flux.createStore({
 var App = React.createClass({
 
     mixins: [
-        CustomerStore.mixin()
+        CustomerStore.mixin(),
+        ProgressStore.mixin()
     ],
 
     getInitialState: function () {
@@ -78,7 +79,7 @@ var App = React.createClass({
 
     getStateFromStores: function () {
         return {
-            isInProgress: CustomerListStore.isInProgress(Constants.CUSTOMER_LIST),
+            isInProgress: ProgressStore.isInProgress(Constants.CUSTOMER_LIST),
             customers: CustomerListStore.list(),
             orders: OrdersByCustomerStore.getList()
         };
