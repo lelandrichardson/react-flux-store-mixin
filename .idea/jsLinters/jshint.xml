@@ -14,7 +14,7 @@
     <option eqeqeq="true" />
     <option eqnull="false" />
     <option es3="false" />
-    <option esnext="false" />
+    <option esnext="true" />
     <option evil="false" />
     <option expr="false" />
     <option forin="true" />
